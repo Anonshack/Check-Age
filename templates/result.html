@@ -1,0 +1,48 @@
+{% load static %}
+
+<html>
+<head>
+    <title>Yosh Hisoblash Natijasi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/result.css' %}">
+</head>
+<body>
+    <h1>Yosh Hisoblash Natijasi</h1>
+    <p class="result">Yosh: {{ yosh }}</p>
+    <p class="result">Yil: {{ yil }}</p>
+    <p class="result">Kun: {{ kun }}</p>
+    <p class="result">Vaqt: {{ vaqt }} soat</p>
+    <a href="{% url 'home' %}" class="home-link">Home Page</a>
+</body>
+</html>
+<style>
+    /* static/css/result.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4caf50;
+}
+
+.result {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.home-link {
+    display: block;
+    margin-top: 20px;
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+</style>
